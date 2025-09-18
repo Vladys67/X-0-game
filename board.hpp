@@ -2,7 +2,7 @@
 #include "cell.hpp"
 
 class Board {
-    Cell _grid[3][3]; // tabla 3x3
+    Cell _grid[3][3]; 
 public:
     Board();
 
