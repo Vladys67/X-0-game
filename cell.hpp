@@ -1,5 +1,5 @@
 #pragma once
-enum class Cell {
+enum class Symbol {
     Empty,
     X,
     O
