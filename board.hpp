@@ -1,13 +1,13 @@
 #pragma once
-#include "cell.hpp"
+#include "Symbol.hpp"
 
 class Board {
-    Cell _grid[3][3]; 
+    Symbol _grid[3][3]; 
 public:
     Board();
 
-    bool PlaceSymbol(int row, int col, Cell symbol);
-    Cell GetCell(int row, int col) const;
+    bool PlaceSymbol(int row, int col, Symbol symbol);
+    Symbol GetCell(int row, int col) const;
     bool IsFull() const;
     void Clear();
 };

@@ -10,7 +10,7 @@ Doi jucători pun pe rând simbolurile **X** și **O** pe o tablă 3x3. Scopul e
 4. Dacă tabla se umple fără câștigător → egalitate.  
 
 ## Structuri și clase
-- **Cell** (`cell.hpp`) – starea unei celule (`Empty`, `X`, `O`).  
+- **Symbol** (`symbol.hpp`) – starea unei celule (`Empty`, `X`, `O`).  
 - **Player** (`player.hpp`) – numele și simbolul jucătorului.  
 - **Board** (`board.hpp`) – tabla 3x3, gestionează mutările.  
 - **Game** (`game.hpp`) – logica jocului (mutări, verificări, ture).  
