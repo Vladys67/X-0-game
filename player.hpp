@@ -1,13 +1,13 @@
 #pragma once
 #include <string>
-#include "cell.hpp"
+#include "symbol.hpp"
 
 class Player {
     std::string _name;
-    Cell _symbol;   // X sau O
+    Symbol _symbol;   
 public:
-    Player(const std::string& name, Cell symbol);
+    Player(const std::string& name, Symbol symbol);
 
     std::string GetName() const;
-    Cell GetSymbol() const;
+    Symbol GetSymbol() const;
 };
