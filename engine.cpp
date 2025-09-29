@@ -1,12 +1,12 @@
 #include "Engine.hpp"
 
-Game::Game(const Player& p1, const Player& p2)
+Engine::Game(const Player& p1, const Player& p2)
     : _player1(p1), _player2(p2), _currentTurn(p1.GetSymbol()) {}
 
-void Game::Start()
-bool Game::MakeMove(int row, int col) { return true; } 
-bool Game::CheckWin(Symbol symbol) const { return false; }
-bool Game::IsDraw() const { return false; }
-void Game::SwitchTurn() {}
-Symbol Game::GetTurn() const { return _currentTurn; }
-const Board& Game::GetBoard() const { return _board; }
+void Engine::Start()
+bool Engine::MakeMove(int row, int col) { return true; } 
+bool Engine::CheckWin(Symbol symbol) const { return false; }
+bool Engine::IsDraw() const { return false; }
+void Engine::SwitchTurn() {}
+Symbol Engine::GetTurn() const { return _currentTurn; }
+const Board& Engine::GetBoard() const { return _board; }
