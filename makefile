@@ -22,4 +22,5 @@ main.o:
 	g++ main.cpp -o main.o -c
 
 clean:
-	rm -f *.o *.exe
+	del /Q *.o *.exe 2>nul
+
