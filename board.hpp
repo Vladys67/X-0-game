@@ -1,5 +1,6 @@
 #pragma once
-#include "symbol.hpp"
+
+#include "Symbol.hpp"
 
 class Board {
     Symbol _grid[3][3]; 
