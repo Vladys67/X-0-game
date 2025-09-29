@@ -1,24 +1,24 @@
-# Fi?iere obiect generate de compilator 
-*.o 
- 
-# Executabile 
-*.exe 
- 
-# Fi?iere temporare ?i de backup 
-*~ 
-*.bak 
-*.tmp 
- 
-# Directoare generate 
-bin/ 
-obj/ 
- 
-# Fi?iere specifice IDE-urilor sau editorilor 
-.vscode/ 
-.idea/ 
-*.swp 
-*.swo 
- 
-# Fi?iere specifice sistemului 
-.DS_Store 
-Thumbs.db 
+# Fișiere obiect generate de compilator
+*.o
+
+# Executabile
+*.exe
+
+# Fișiere temporare și de backup
+*~
+*.bak
+*.tmp
+
+# Directoare generate
+bin/
+obj/
+
+# Fișiere specifice IDE-urilor sau editorilor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fișiere specifice sistemului
+.DS_Store
+Thumbs.db
