@@ -1,5 +1,6 @@
 # Fișiere obiect generate de compilator
 *.o
+*.obj
 
 # Executabile
 *.exe
