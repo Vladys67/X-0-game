@@ -1,10 +1,9 @@
-#include "UI.hpp"
+#pragma once
+#include "abstract_ui.hpp"
 #include <string>
-#include <iostream>
 
-void UI::ShowBoard(const Board& board) {
-}
-
-void UI::ShowMessage(const std::string& msg) {
-    std::cout << msg << std::endl;
-}
+class UI : public AbstractUI {
+public:
+    void ShowBoard(const Board& board) override;
+    void ShowMessage(const std::string& msg) override;
+};

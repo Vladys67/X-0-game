@@ -1,7 +1,5 @@
 #pragma once
-enum class Direction {
-    Horizontal,
-    Vertical,
-    DiagonalMain,
-    DiagonalSecondary
-};
+#include <iostream>
+enum class Direction { Horizontal, Vertical, DiagonalMain, DiagonalSecondary };
+std::ostream& operator<<(std::ostream& out, const Direction& d);
+

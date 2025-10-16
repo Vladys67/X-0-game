@@ -1,6 +1,4 @@
 #pragma once
-enum class Symbol {
-    Empty,
-    X,
-    O
-};
+#include <iostream>
+enum class Symbol { Empty, X, O };
+std::ostream& operator<<(std::ostream& out, const Symbol& s);
