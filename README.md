@@ -98,3 +98,4 @@ Lansarea Jocului
 După finalizarea build-ului, am pornit jocul direct din terminal:
 X0Game.exe
 
+
