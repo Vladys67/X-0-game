@@ -17,6 +17,6 @@ public:
     Symbol GetSymbol() const { return _symbol; }
     friend std::istream& operator>>(std::istream& in, Player& p);
     friend std::ostream& operator<<(std::ostream& out, const Player& p);
-};
-=======
+}
+
  
