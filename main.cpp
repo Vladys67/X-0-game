@@ -1,6 +1,6 @@
-#include "Engine.hpp"
-#include "Player.hpp"
-#include <string>
+#include "engine/Engine.hpp"
+#include "core/Player.hpp"  
+#include "core/Symbol.hpp"
 
 int main() {
     Player p1("Player 1", Symbol::X);

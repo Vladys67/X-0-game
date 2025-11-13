@@ -1,8 +1,6 @@
 #include "Engine.hpp"
-#include "UI.hpp"
-#include <array>
-#include <algorithm>
-#include <string>
+#include "../ui/UI.hpp"
+#include <iostream>
 
 Engine::Engine() : Engine(Player(), Player()) {}
 Engine::Engine(const Player& p1, const Player& p2)
@@ -19,7 +17,6 @@ Engine& Engine::operator=(const Engine& o) {
 bool Engine::operator==(const Engine& o) const {
     return _board == o._board && _player1 == o._player1 && _player2 == o._player2 && _currentTurn == o._currentTurn;
 }
-
 bool Engine::MakeMove(int r, int c) { return _board.PlaceSymbol(r, c, _currentTurn); }
 void Engine::SwitchTurn() { _currentTurn = (_currentTurn == Symbol::X ? Symbol::O : Symbol::X); }
 bool Engine::IsDraw() const { return _board.IsFull() && !CheckWin(_currentTurn); }

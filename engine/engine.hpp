@@ -1,16 +1,9 @@
 #pragma once
-#include <iostream>
 #include <memory>
-#include "Board.hpp"
+#include "../core/Board.hpp"
 #include "Player.hpp"
-#include "Direction.hpp"
-
-class AbstractUI {
-public:
-    virtual ~AbstractUI() = default;
-    virtual void ShowBoard(const Board& b) = 0;
-    virtual void ShowMessage(const std::string& m) = 0;
-};
+#include "../core/Direction.hpp"
+#include "../ui/AbstractUI.hpp"
 
 class Engine {
     Board _board;

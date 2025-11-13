@@ -1,7 +1,7 @@
 #pragma once
-#include <iostream>
 #include <string>
-#include "Symbol.hpp"
+#include <iostream>
+#include "Symbol.hpp"  
 
 class Player {
     std::string _name{"Anonim"};
@@ -12,11 +12,9 @@ public:
     Player(const Player&) = default;
     ~Player() = default;
     Player& operator=(const Player&) = default;
-    bool operator==(const Player& o) const = default;
+    bool operator==(const Player& o) const;  
     std::string GetName() const { return _name; }
     Symbol GetSymbol() const { return _symbol; }
     friend std::istream& operator>>(std::istream& in, Player& p);
     friend std::ostream& operator<<(std::ostream& out, const Player& p);
 };
-=======
- 

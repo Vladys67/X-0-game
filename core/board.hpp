@@ -1,7 +1,7 @@
 #pragma once
 #include <array>
 #include <iostream>
-#include <algorithm>  
+#include <algorithm>
 #include "Symbol.hpp"
 
 class Board {
@@ -22,9 +22,7 @@ public:
         return std::equal(_grid.begin(), _grid.end(), o._grid.begin());
     }
     bool PlaceSymbol(int r, int c, Symbol s) {
-        if (_grid[r][c] == Symbol::Empty) {
-            _grid[r][c] = s; return true;
-        }
+        if (_grid[r][c] == Symbol::Empty) { _grid[r][c] = s; return true; }
         return false;
     }
     Symbol GetCell(int r, int c) const { return _grid[r][c]; }
