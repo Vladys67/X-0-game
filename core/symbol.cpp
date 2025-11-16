@@ -1,4 +1,12 @@
-#include "Symbol.hpp"  // Include header-ul cu declarațiile
+#include "Symbol.hpp"
+
+bool operator==(Symbol lhs, Symbol rhs) {
+    return static_cast<int>(lhs) == static_cast<int>(rhs);
+}
+
+bool operator!=(Symbol lhs, Symbol rhs) {
+    return !(lhs == rhs);
+}
 
 std::ostream& operator<<(std::ostream& out, const Symbol& s) {
     switch(s) {
@@ -7,12 +15,4 @@ std::ostream& operator<<(std::ostream& out, const Symbol& s) {
         case Symbol::O: out << "O"; break;
     }
     return out;
-}
-
-bool operator==(Symbol lhs, Symbol rhs) {
-    return static_cast<int>(lhs) == static_cast<int>(rhs);
-}
-
-bool operator!=(Symbol lhs, Symbol rhs) {
-    return !(lhs == rhs);  
 }

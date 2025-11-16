@@ -1,18 +1,23 @@
 #pragma once
 #include <string>
-#include <iostream>
-#include "Symbol.hpp"  
+#include "Symbol.hpp"
 
 class Player {
-    std::string _name{"Anonim"};
-    Symbol _symbol{Symbol::Empty};
+    std::string _name;
+    Symbol _symbol;
 public:
-    Player() = default;
+    Player() : _name("Default"), _symbol(Symbol::Empty) {}
     Player(const std::string& name, Symbol symbol) : _name(name), _symbol(symbol) {}
-    Player(const Player&) = default;
+    Player(const Player& o) : _name(o._name), _symbol(o._symbol) {}
     ~Player() = default;
-    Player& operator=(const Player&) = default;
-    bool operator==(const Player& o) const;  
+    Player& operator=(const Player& o) {
+        if (this != &o) {
+            _name = o._name;
+            _symbol = o._symbol;
+        }
+        return *this;
+    }
+    bool operator==(const Player& o) const;
     std::string GetName() const { return _name; }
     Symbol GetSymbol() const { return _symbol; }
     friend std::istream& operator>>(std::istream& in, Player& p);
