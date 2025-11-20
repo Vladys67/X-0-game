@@ -1,9 +1,10 @@
 #pragma once
-#include "abstract_ui.hpp"
+#include "Board.hpp"
 #include <string>
 
-class UI : public AbstractUI {
+class AbstractUI {
 public:
-    void ShowBoard(const Board& board) override;
-    void ShowMessage(const std::string& msg) override;
+    virtual void ShowBoard(const Board& board) = 0;
+    virtual void ShowMessage(const std::string& msg) = 0;
+    virtual ~AbstractUI() = default;
 };
