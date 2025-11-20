@@ -1,8 +1,9 @@
 #pragma once
-#include "AbstractRenderer.hpp"
+#include "abstract_ui.hpp"
+#include <string>
 
-class UI : public AbstractRenderer {
+class UI : public AbstractUI {
 public:
-    void DrawBoard(const Board& board) override;
+    void ShowBoard(const Board& board) override;
     void ShowMessage(const std::string& msg) override;
 };
