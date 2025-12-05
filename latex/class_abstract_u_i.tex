@@ -1,0 +1,80 @@
+\doxysection{Abstract\+UI Class Reference}
+\hypertarget{class_abstract_u_i}{}\label{class_abstract_u_i}\index{AbstractUI@{AbstractUI}}
+
+
+Clasa abstractă \doxylink{class_abstract_u_i}{Abstract\+UI} definește interfața pentru afișarea jocului.  
+
+
+
+
+{\ttfamily \#include $<$abstract\+Ui.\+hpp$>$}
+
+Inheritance diagram for Abstract\+UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_abstract_u_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_abstract_u_i_ad8c92ad9b30e53a410fbde7c3e0e2065}\label{class_abstract_u_i_ad8c92ad9b30e53a410fbde7c3e0e2065} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Abstract\+UI} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor virtual. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_u_i_a1af47002560a1cf0be6bb2e3d4c19c47}{Show\+Board}} (const \mbox{\hyperlink{class_board}{Board}} \&b)=0
+\begin{DoxyCompactList}\small\item\em Afișează tabla de joc. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_u_i_a3b3fd2916c95ea28ff0903d548c128f8}{Show\+Message}} (const std\+::string \&m)=0
+\begin{DoxyCompactList}\small\item\em Afișează un mesaj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa abstractă \doxylink{class_abstract_u_i}{Abstract\+UI} definește interfața pentru afișarea jocului. 
+
+Permite implementări diferite (console, GUI etc.). 
+
+\label{doc-func-members}
+\Hypertarget{class_abstract_u_i_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_u_i_a1af47002560a1cf0be6bb2e3d4c19c47}\index{AbstractUI@{AbstractUI}!ShowBoard@{ShowBoard}}
+\index{ShowBoard@{ShowBoard}!AbstractUI@{AbstractUI}}
+\doxysubsubsection{\texorpdfstring{ShowBoard()}{ShowBoard()}}
+{\footnotesize\ttfamily \label{class_abstract_u_i_a1af47002560a1cf0be6bb2e3d4c19c47} 
+virtual void Abstract\+UI\+::\+Show\+Board (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Afișează tabla de joc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \doxylink{class_board}{Board} de afișat. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_u_i_a8d762cac4d281593f7e59c7b542a65a9}{UI}}.
+
+\Hypertarget{class_abstract_u_i_a3b3fd2916c95ea28ff0903d548c128f8}\index{AbstractUI@{AbstractUI}!ShowMessage@{ShowMessage}}
+\index{ShowMessage@{ShowMessage}!AbstractUI@{AbstractUI}}
+\doxysubsubsection{\texorpdfstring{ShowMessage()}{ShowMessage()}}
+{\footnotesize\ttfamily \label{class_abstract_u_i_a3b3fd2916c95ea28ff0903d548c128f8} 
+virtual void Abstract\+UI\+::\+Show\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Afișează un mesaj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mesajul de afișat. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_u_i_aeefe84b05e10ffe60b8ef69bf25a4068}{UI}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ui/\mbox{\hyperlink{abstract_ui_8hpp}{abstract\+Ui.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\chapter{X0\+Game -\/ Joc Tic-\/\+Tac-\/\+Toe în C++ }
+\hypertarget{md__readme}{}\label{md__readme}\index{X0Game -\/ Joc Tic-\/Tac-\/Toe în C++@{X0Game -\/ Joc Tic-\/Tac-\/Toe în C++}}
+\label{md__readme_autotoc_md0}%
+\Hypertarget{md__readme_autotoc_md0}%
+\hypertarget{md__readme_autotoc_md1}{}\doxysection{\texorpdfstring{Descrierea Proiectului}{Descrierea Proiectului}}\label{md__readme_autotoc_md1}
+Acesta este un joc simplu Tic-\/\+Tac-\/\+Toe (X și O) implementat în C++17. Jocul suportă doi jucători umani, rulând în consolă. Structura proiectului este modulară\+: core (date), engine (logică), ui (interfață). Proiectul a fost dezvoltat ca parte a lucrării de laborator pentru familiarizarea cu întreținerea codului, documentația și testarea unitară.\hypertarget{md__readme_autotoc_md2}{}\doxysection{\texorpdfstring{Declarație de Originalitate}{Declarație de Originalitate}}\label{md__readme_autotoc_md2}
+Acest proiect a fost realizat integral de mine, Vladislav, ca student în cadrul cursului de programare C++. Toate componentele (cod sursă, documentație, teste) sunt rezultatul muncii mele personale, bazate pe cerințele laboratorului. Nu am copiat cod sau conținut de la alte surse fără atribuire, și am respectat principiile etice academice. Orice similitudini cu alte proiecte sunt rezultatul implementării standard a algoritmilor de bază pentru Tic-\/\+Tac-\/\+Toe.\hypertarget{md__readme_autotoc_md3}{}\doxysection{\texorpdfstring{Reguli Joc}{Reguli Joc}}\label{md__readme_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Jocul se joacă pe o tablă 3x3.
+\item Jucătorul X începe primul.
+\item Jucătorii introduc mutări sub formă "{}r c"{} (rând 0-\/2, coloană 0-\/2).
+\item Victoria\+: 3 simboluri aliniate orizontal, vertical sau diagonal.
+\item Egalitate\+: Tabla plină fără aliniere.
+\item Mutări invalide (celulă ocupată) sunt respinse.
+\end{DoxyItemize}\hypertarget{md__readme_autotoc_md4}{}\doxysection{\texorpdfstring{Dependențe}{Dependențe}}\label{md__readme_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\bfseries{Mediu de dezvoltare}}\+: Orice IDE cu suport C++ (VS Code, CLion, g++ pe Linux/\+Windows).
+\item {\bfseries{Compilator}}\+: g++ (versiune \texorpdfstring{$>$}{>}= 7, cu suport C++17).
+\item {\bfseries{Biblioteci terțe}}\+: Niciuna (doar STL\+: array, iostream, memory, string, algorithm).
+\end{DoxyItemize}\hypertarget{md__readme_autotoc_md5}{}\doxysection{\texorpdfstring{Instrucțiuni de Construire}{Instrucțiuni de Construire}}\label{md__readme_autotoc_md5}
+
+\begin{DoxyEnumerate}
+\item Deschide terminalul în directorul proiectului.
+\item Rulează {\ttfamily make} pentru a compila (generează {\ttfamily X0\+Game} sau executabil).
+\item Rulează {\ttfamily ./\+X0\+Game} (sau {\ttfamily X0\+Game.\+exe} pe Windows).
+\item Pentru rularea testelor\+: {\ttfamily make test}.
+\item Pentru curățare\+: {\ttfamily make clean}. 
+\end{DoxyEnumerate}

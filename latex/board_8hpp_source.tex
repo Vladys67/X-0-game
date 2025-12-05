@@ -1,0 +1,39 @@
+\doxysection{board.\+hpp}
+\hypertarget{board_8hpp_source}{}\label{board_8hpp_source}\index{core/board.hpp@{core/board.hpp}}
+\mbox{\hyperlink{board_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \#include\ <array>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\ \{}
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ std::array<std::array<Symbol,\ 3>,\ 3>\ \mbox{\hyperlink{class_board_ab76cd96ec720c40013232bdf347c76aa}{\_grid}}\{\};\ \ }
+\DoxyCodeLine{00021\ \ }
+\DoxyCodeLine{00022\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}();}
+\DoxyCodeLine{00027\ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \mbox{\hyperlink{class_board_a29c8872f196709675865c069f5e4c555}{Board}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ o);}
+\DoxyCodeLine{00033\ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \mbox{\hyperlink{class_board_af56c20b4645324739d9d1721f786796e}{Board}}(\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}\ g[3][3]);}
+\DoxyCodeLine{00039\ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \mbox{\hyperlink{class_board_a8fbba57b4dc14d8d660b3c9ce248c441}{\string~Board}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00044\ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ \mbox{\hyperlink{class_board_a1e8f7a13a9a2e3d6c56601a460de5f6c}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ o);}
+\DoxyCodeLine{00051\ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_a59eacd8f2d959960100ae5234c785c57}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ o)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_a34d7c2e655a7766ea6a850d9ddafb20a}{PlaceSymbol}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ c,\ \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}\ s);}
+\DoxyCodeLine{00067\ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}\ \mbox{\hyperlink{class_board_a02151f0fa58f85f40cb48725de2c7ea8}{GetCell}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_a5f676d0d4e95dd81c0f1bed7a67c8c31}{IsFull}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ \ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_board_a41fb0850721762ab7d39848a49a88c6d}{Clear}}();}
+\DoxyCodeLine{00086\ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ \mbox{\hyperlink{class_board_a0ed686c7176aecfa3d5eb82ba36b9d95}{operator>>}}(std::istream\&\ in,\ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ b);}
+\DoxyCodeLine{00094\ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_board_a3cc392644ff7b99ca745f0c108a141ee}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}\&\ b);}
+\DoxyCodeLine{00102\ \ \};}
+
+\end{DoxyCode}

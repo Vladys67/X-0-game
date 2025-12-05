@@ -1,0 +1,258 @@
+\doxysection{Engine Class Reference}
+\hypertarget{class_engine}{}\label{class_engine}\index{Engine@{Engine}}
+
+
+Clasa \doxylink{class_engine}{Engine} gestionează logica jocului\+: mutări, verificări, ture.  
+
+
+
+
+{\ttfamily \#include $<$engine.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2} 
+{\bfseries Engine} ()
+\begin{DoxyCompactList}\small\item\em Constructor implicit. Inițializează jucători default și \doxylink{class_u_i}{UI}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine_a5ddf04655d9fc000a626fdcbff41731a}{Engine}} (const \mbox{\hyperlink{class_player}{Player}} \&p1, const \mbox{\hyperlink{class_player}{Player}} \&p2)
+\begin{DoxyCompactList}\small\item\em Constructor cu jucători. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine_afc318127a7ae0e76d3330c1bb6cb8728}{Engine}} (const \mbox{\hyperlink{class_engine}{Engine}} \&o)
+\begin{DoxyCompactList}\small\item\em Constructor de copiere. \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_a756500478f6f6debf63da450107b7250}\label{class_engine_a756500478f6f6debf63da450107b7250} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Engine} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor implicit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine}{Engine}} \& \mbox{\hyperlink{class_engine_a02ccb0084f041af9980f561ffcd26f18}{operator=}} (const \mbox{\hyperlink{class_engine}{Engine}} \&o)
+\begin{DoxyCompactList}\small\item\em Operator de asignare. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_ac0de310d778d70789abc4599c549262c}{operator==}} (const \mbox{\hyperlink{class_engine}{Engine}} \&o) const
+\begin{DoxyCompactList}\small\item\em Operator de egalitate. \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_a1fbe9f5cb4abc3572e432cae1f154817}\label{class_engine_a1fbe9f5cb4abc3572e432cae1f154817} 
+void {\bfseries Start} ()
+\begin{DoxyCompactList}\small\item\em Pornește jocul (buclă principală). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_add0eca4bf530c4ae625b338126cf8a81}{Make\+Move}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Efectuează o mutare. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_af1ad227e3cbe36b3ebaa3d578b16e68f}{Check\+Win}} (\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} s) const
+\begin{DoxyCompactList}\small\item\em Verifică victoria pentru un simbol. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_engine_af7915f832d23d5b1df32186a13ea8fa0}{Is\+Draw}} () const
+\begin{DoxyCompactList}\small\item\em Verifică egalitate (tablă plină fără învingător). \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_a756cdd75dbf8ca15ea30ed0b70e7ab0d}\label{class_engine_a756cdd75dbf8ca15ea30ed0b70e7ab0d} 
+void {\bfseries Switch\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Schimbă tura (X \texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>} O). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} \mbox{\hyperlink{class_engine_a3c4dab8b93147c7ab492ca0c8e1693a7}{Get\+Turn}} () const
+\begin{DoxyCompactList}\small\item\em Getter pentru tura curentă. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_board}{Board}} \& \mbox{\hyperlink{class_engine_a6bb93d6023c225b4f9ec2cde6ac3de08}{Get\+Board}} () const
+\begin{DoxyCompactList}\small\item\em Getter pentru tablă (const). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_engine_a338690e8dfc619e3dbb056c3f2783938}\label{class_engine_a338690e8dfc619e3dbb056c3f2783938} 
+\mbox{\hyperlink{class_board}{Board}} {\bfseries \+\_\+board}
+\begin{DoxyCompactList}\small\item\em Instanța tablei. \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_a854028b38962f0dd4bb583b90f84e767}\label{class_engine_a854028b38962f0dd4bb583b90f84e767} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries \+\_\+player1}
+\item 
+\Hypertarget{class_engine_a58ebb3916ed572c66c8578226da8481b}\label{class_engine_a58ebb3916ed572c66c8578226da8481b} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries \+\_\+player2}
+\begin{DoxyCompactList}\small\item\em Jucătorii. \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_ac22e6bf32d86a4846d8afd5cdabce89a}\label{class_engine_ac22e6bf32d86a4846d8afd5cdabce89a} 
+\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} {\bfseries \+\_\+current\+Turn}
+\begin{DoxyCompactList}\small\item\em Simbolul curent (X sau O). \end{DoxyCompactList}\item 
+\Hypertarget{class_engine_ac3220dfdc80af019fb164859fd40b50b}\label{class_engine_ac3220dfdc80af019fb164859fd40b50b} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_abstract_u_i}{Abstract\+UI}} $>$ {\bfseries \+\_\+ui}
+\begin{DoxyCompactList}\small\item\em Pointer inteligent la \doxylink{class_u_i}{UI}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_engine_ab119068731b47fa95a812e2053917715}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_engine}{Engine}} \&e)
+\begin{DoxyCompactList}\small\item\em Operator de ieșire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa \doxylink{class_engine}{Engine} gestionează logica jocului\+: mutări, verificări, ture. 
+
+Integrează \doxylink{class_board}{Board}, \doxylink{class_player}{Player} și \doxylink{class_u_i}{UI}. 
+
+\label{doc-constructors}
+\Hypertarget{class_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_engine_a5ddf04655d9fc000a626fdcbff41731a}\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_engine_a5ddf04655d9fc000a626fdcbff41731a} 
+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{class_player}{Player}} \&}]{p2}{}\end{DoxyParamCaption})}
+
+
+
+Constructor cu jucători. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Primul jucător (X). \\
+\hline
+{\em p2} & Al doilea jucător (O). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_engine_afc318127a7ae0e76d3330c1bb6cb8728}\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_engine_afc318127a7ae0e76d3330c1bb6cb8728} 
+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_engine}{Engine}} \&}]{o}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de copiere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_engine}{Engine} de copiat. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_engine_af1ad227e3cbe36b3ebaa3d578b16e68f}\index{Engine@{Engine}!CheckWin@{CheckWin}}
+\index{CheckWin@{CheckWin}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{CheckWin()}{CheckWin()}}
+{\footnotesize\ttfamily \label{class_engine_af1ad227e3cbe36b3ebaa3d578b16e68f} 
+bool Engine\+::\+Check\+Win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{s}{}\end{DoxyParamCaption}) const}
+
+
+
+Verifică victoria pentru un simbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Simbol de verificat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă există linie de 3 simboluri. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a6bb93d6023c225b4f9ec2cde6ac3de08}\index{Engine@{Engine}!GetBoard@{GetBoard}}
+\index{GetBoard@{GetBoard}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetBoard()}{GetBoard()}}
+{\footnotesize\ttfamily \label{class_engine_a6bb93d6023c225b4f9ec2cde6ac3de08} 
+const \mbox{\hyperlink{class_board}{Board}} \& Engine\+::\+Get\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Getter pentru tablă (const). 
+
+\begin{DoxyReturn}{Returns}
+Referință const la \doxylink{class_board}{Board}. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a3c4dab8b93147c7ab492ca0c8e1693a7}\index{Engine@{Engine}!GetTurn@{GetTurn}}
+\index{GetTurn@{GetTurn}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetTurn()}{GetTurn()}}
+{\footnotesize\ttfamily \label{class_engine_a3c4dab8b93147c7ab492ca0c8e1693a7} 
+\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} Engine\+::\+Get\+Turn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Getter pentru tura curentă. 
+
+\begin{DoxyReturn}{Returns}
+Simbolul curent. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_af7915f832d23d5b1df32186a13ea8fa0}\index{Engine@{Engine}!IsDraw@{IsDraw}}
+\index{IsDraw@{IsDraw}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{IsDraw()}{IsDraw()}}
+{\footnotesize\ttfamily \label{class_engine_af7915f832d23d5b1df32186a13ea8fa0} 
+bool Engine\+::\+Is\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Verifică egalitate (tablă plină fără învingător). 
+
+\begin{DoxyReturn}{Returns}
+true dacă este egal. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_add0eca4bf530c4ae625b338126cf8a81}\index{Engine@{Engine}!MakeMove@{MakeMove}}
+\index{MakeMove@{MakeMove}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{MakeMove()}{MakeMove()}}
+{\footnotesize\ttfamily \label{class_engine_add0eca4bf530c4ae625b338126cf8a81} 
+bool Engine\+::\+Make\+Move (\begin{DoxyParamCaption}\item[{int}]{r}{, }\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Efectuează o mutare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Rând. \\
+\hline
+{\em c} & Coloană. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă mutarea a reușit. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_a02ccb0084f041af9980f561ffcd26f18}\index{Engine@{Engine}!operator=@{operator=}}
+\index{operator=@{operator=}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_engine_a02ccb0084f041af9980f561ffcd26f18} 
+\mbox{\hyperlink{class_engine}{Engine}} \& Engine\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_engine}{Engine}} \&}]{o}{}\end{DoxyParamCaption})}
+
+
+
+Operator de asignare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_engine}{Engine} de asignat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la this. 
+\end{DoxyReturn}
+\Hypertarget{class_engine_ac0de310d778d70789abc4599c549262c}\index{Engine@{Engine}!operator==@{operator==}}
+\index{operator==@{operator==}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_engine_ac0de310d778d70789abc4599c549262c} 
+bool Engine\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_engine}{Engine}} \&}]{o}{}\end{DoxyParamCaption}) const}
+
+
+
+Operator de egalitate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_engine}{Engine} de comparat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă toate componentele sunt identice. 
+\end{DoxyReturn}
+
+
+\label{doc-related-members}
+\Hypertarget{class_engine_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_engine_ab119068731b47fa95a812e2053917715}\index{Engine@{Engine}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_engine_ab119068731b47fa95a812e2053917715} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_engine}{Engine}} \&}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator de ieșire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Fluxul de ieșire. \\
+\hline
+{\em e} & \doxylink{class_engine}{Engine} de afișat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la fluxul de ieșire. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+engine/\mbox{\hyperlink{engine_8hpp}{engine.\+hpp}}\item 
+engine/engine.\+cpp\end{DoxyCompactItemize}

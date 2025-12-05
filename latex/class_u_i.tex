@@ -1,0 +1,81 @@
+\doxysection{UI Class Reference}
+\hypertarget{class_u_i}{}\label{class_u_i}\index{UI@{UI}}
+
+
+Clasa \doxylink{class_u_i}{UI} implementează \doxylink{class_abstract_u_i}{Abstract\+UI} pentru ieșire în consolă.  
+
+
+
+
+{\ttfamily \#include $<$ui.\+hpp$>$}
+
+Inheritance diagram for UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_a8d762cac4d281593f7e59c7b542a65a9}{Show\+Board}} (const \mbox{\hyperlink{class_board}{Board}} \&b) override
+\begin{DoxyCompactList}\small\item\em Afișează tabla în consolă (folosește operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_aeefe84b05e10ffe60b8ef69bf25a4068}{Show\+Message}} (const std\+::string \&m) override
+\begin{DoxyCompactList}\small\item\em Afișează mesajul în consolă cu newline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_abstract_u_i}{Abstract\+UI}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Abstract\+UI} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa \doxylink{class_u_i}{UI} implementează \doxylink{class_abstract_u_i}{Abstract\+UI} pentru ieșire în consolă. 
+
+\label{doc-func-members}
+\Hypertarget{class_u_i_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_i_a8d762cac4d281593f7e59c7b542a65a9}\index{UI@{UI}!ShowBoard@{ShowBoard}}
+\index{ShowBoard@{ShowBoard}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{ShowBoard()}{ShowBoard()}}
+{\footnotesize\ttfamily \label{class_u_i_a8d762cac4d281593f7e59c7b542a65a9} 
+void UI\+::\+Show\+Board (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Afișează tabla în consolă (folosește operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \doxylink{class_board}{Board} de afișat. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_u_i_a1af47002560a1cf0be6bb2e3d4c19c47}{Abstract\+UI}}.
+
+\Hypertarget{class_u_i_aeefe84b05e10ffe60b8ef69bf25a4068}\index{UI@{UI}!ShowMessage@{ShowMessage}}
+\index{ShowMessage@{ShowMessage}!UI@{UI}}
+\doxysubsubsection{\texorpdfstring{ShowMessage()}{ShowMessage()}}
+{\footnotesize\ttfamily \label{class_u_i_aeefe84b05e10ffe60b8ef69bf25a4068} 
+void UI\+::\+Show\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Afișează mesajul în consolă cu newline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Mesajul de afișat. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_abstract_u_i_a3b3fd2916c95ea28ff0903d548c128f8}{Abstract\+UI}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ui/\mbox{\hyperlink{ui_8hpp}{ui.\+hpp}}\item 
+ui/ui.\+cpp\end{DoxyCompactItemize}

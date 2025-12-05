@@ -1,0 +1,118 @@
+\doxysection{core/symbol.hpp File Reference}
+\hypertarget{symbol_8hpp}{}\label{symbol_8hpp}\index{core/symbol.hpp@{core/symbol.hpp}}
+
+
+Definirea simbolurilor utilizate în jocul Tic-\/\+Tac-\/\+Toe (X, O, Empty).  
+
+
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} \{ {\bfseries Empty}
+, {\bfseries X}
+, {\bfseries O}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerație pentru simbolurile din joc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{symbol_8hpp_a7aabd2e026871e17ae520ff89d99ce7c}{operator==}} (\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} lhs, \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} rhs)
+\begin{DoxyCompactList}\small\item\em Operator de egalitate pentru \doxylink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{symbol_8hpp_abf0f3093f3e470749261e6a690269aaf}{operator!=}} (\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} lhs, \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} rhs)
+\begin{DoxyCompactList}\small\item\em Operator de inegalitate pentru \doxylink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{symbol_8hpp_a1e69af388277049e98ffdc5906f260cc}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} \&s)
+\begin{DoxyCompactList}\small\item\em Operator de ieșire pentru afișarea simbolului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definirea simbolurilor utilizate în jocul Tic-\/\+Tac-\/\+Toe (X, O, Empty). 
+
+@project X0\+Game \begin{DoxyAuthor}{Author}
+\mbox{[}Vladislav\mbox{]} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\label{doc-enum-members}
+\Hypertarget{symbol_8hpp_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}\index{symbol.hpp@{symbol.hpp}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!symbol.hpp@{symbol.hpp}}
+\doxysubsubsection{\texorpdfstring{Symbol}{Symbol}}
+{\footnotesize\ttfamily \label{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54} 
+enum class \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumerație pentru simbolurile din joc. 
+
+Reprezintă stările celulelor de pe tablă\+: gol (Empty), X sau O. 
+
+\label{doc-func-members}
+\Hypertarget{symbol_8hpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{symbol_8hpp_abf0f3093f3e470749261e6a690269aaf}\index{symbol.hpp@{symbol.hpp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!symbol.hpp@{symbol.hpp}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{symbol_8hpp_abf0f3093f3e470749261e6a690269aaf} 
+bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{lhs}{, }\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{rhs}{}\end{DoxyParamCaption})}
+
+
+
+Operator de inegalitate pentru \doxylink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Simbolul stâng. \\
+\hline
+{\em rhs} & Simbolul drept. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă simbolurile sunt diferite, altfel false. 
+\end{DoxyReturn}
+\Hypertarget{symbol_8hpp_a1e69af388277049e98ffdc5906f260cc}\index{symbol.hpp@{symbol.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!symbol.hpp@{symbol.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{symbol_8hpp_a1e69af388277049e98ffdc5906f260cc} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} \&}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Operator de ieșire pentru afișarea simbolului. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Fluxul de ieșire. \\
+\hline
+{\em s} & Simbolul de afișat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la fluxul de ieșire. 
+\end{DoxyReturn}
+\Hypertarget{symbol_8hpp_a7aabd2e026871e17ae520ff89d99ce7c}\index{symbol.hpp@{symbol.hpp}!operator==@{operator==}}
+\index{operator==@{operator==}!symbol.hpp@{symbol.hpp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{symbol_8hpp_a7aabd2e026871e17ae520ff89d99ce7c} 
+bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{lhs}{, }\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{rhs}{}\end{DoxyParamCaption})}
+
+
+
+Operator de egalitate pentru \doxylink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Simbolul stâng. \\
+\hline
+{\em rhs} & Simbolul drept. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă simbolurile sunt egale, altfel false. 
+\end{DoxyReturn}

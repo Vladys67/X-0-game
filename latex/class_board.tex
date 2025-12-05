@@ -1,0 +1,236 @@
+\doxysection{Board Class Reference}
+\hypertarget{class_board}{}\label{class_board}\index{Board@{Board}}
+
+
+Clasa \doxylink{class_board}{Board} gestionează o matrice 3x3 de simboluri.  
+
+
+
+
+{\ttfamily \#include $<$board.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb} 
+{\bfseries Board} ()
+\begin{DoxyCompactList}\small\item\em Constructor implicit. Apel implicit \doxylink{class_board_a41fb0850721762ab7d39848a49a88c6d}{Clear()}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_a29c8872f196709675865c069f5e4c555}{Board}} (const \mbox{\hyperlink{class_board}{Board}} \&o)
+\begin{DoxyCompactList}\small\item\em Constructor de copiere. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_af56c20b4645324739d9d1721f786796e}{Board}} (\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} g\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Constructor din array 2D. \end{DoxyCompactList}\item 
+\Hypertarget{class_board_a8fbba57b4dc14d8d660b3c9ce248c441}\label{class_board_a8fbba57b4dc14d8d660b3c9ce248c441} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Board} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor implicit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board}{Board}} \& \mbox{\hyperlink{class_board_a1e8f7a13a9a2e3d6c56601a460de5f6c}{operator=}} (const \mbox{\hyperlink{class_board}{Board}} \&o)
+\begin{DoxyCompactList}\small\item\em Operator de asignare. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a59eacd8f2d959960100ae5234c785c57}{operator==}} (const \mbox{\hyperlink{class_board}{Board}} \&o) const
+\begin{DoxyCompactList}\small\item\em Operator de egalitate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a34d7c2e655a7766ea6a850d9ddafb20a}{Place\+Symbol}} (int r, int c, \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} s)
+\begin{DoxyCompactList}\small\item\em Plasează un simbol dacă celula e goală. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} \mbox{\hyperlink{class_board_a02151f0fa58f85f40cb48725de2c7ea8}{Get\+Cell}} (int r, int c) const
+\begin{DoxyCompactList}\small\item\em Getter pentru celulă. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a5f676d0d4e95dd81c0f1bed7a67c8c31}{Is\+Full}} () const
+\begin{DoxyCompactList}\small\item\em Verifică dacă tabla este plină. \end{DoxyCompactList}\item 
+\Hypertarget{class_board_a41fb0850721762ab7d39848a49a88c6d}\label{class_board_a41fb0850721762ab7d39848a49a88c6d} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em Șterge toate simbolurile (setează Empty). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_board_ab76cd96ec720c40013232bdf347c76aa}\label{class_board_ab76cd96ec720c40013232bdf347c76aa} 
+std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}, 3 $>$, 3 $>$ {\bfseries \+\_\+grid} \{\}
+\begin{DoxyCompactList}\small\item\em Matricea interioară a tablei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_board_a0ed686c7176aecfa3d5eb82ba36b9d95}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_board}{Board}} \&b)
+\begin{DoxyCompactList}\small\item\em Operator de intrare. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_board_a3cc392644ff7b99ca745f0c108a141ee}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_board}{Board}} \&b)
+\begin{DoxyCompactList}\small\item\em Operator de ieșire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa \doxylink{class_board}{Board} gestionează o matrice 3x3 de simboluri. 
+
+Suportă plasare simboluri, verificări de plin/victorie, citire/afisare. 
+
+\label{doc-constructors}
+\Hypertarget{class_board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_board_a29c8872f196709675865c069f5e4c555}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_board_a29c8872f196709675865c069f5e4c555} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{o}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de copiere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_board}{Board} de copiat. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_board_af56c20b4645324739d9d1721f786796e}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_board_af56c20b4645324739d9d1721f786796e} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{g}{\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Constructor din array 2D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Array de simboluri 3x3. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_board_a02151f0fa58f85f40cb48725de2c7ea8}\index{Board@{Board}!GetCell@{GetCell}}
+\index{GetCell@{GetCell}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{GetCell()}{GetCell()}}
+{\footnotesize\ttfamily \label{class_board_a02151f0fa58f85f40cb48725de2c7ea8} 
+\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}} Board\+::\+Get\+Cell (\begin{DoxyParamCaption}\item[{int}]{r}{, }\item[{int}]{c}{}\end{DoxyParamCaption}) const}
+
+
+
+Getter pentru celulă. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Rând. \\
+\hline
+{\em c} & Coloană. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Simbolul din celulă. 
+\end{DoxyReturn}
+\Hypertarget{class_board_a5f676d0d4e95dd81c0f1bed7a67c8c31}\index{Board@{Board}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{IsFull()}{IsFull()}}
+{\footnotesize\ttfamily \label{class_board_a5f676d0d4e95dd81c0f1bed7a67c8c31} 
+bool Board\+::\+Is\+Full (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Verifică dacă tabla este plină. 
+
+\begin{DoxyReturn}{Returns}
+true dacă toate celulele sunt ocupate. 
+\end{DoxyReturn}
+\Hypertarget{class_board_a1e8f7a13a9a2e3d6c56601a460de5f6c}\index{Board@{Board}!operator=@{operator=}}
+\index{operator=@{operator=}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_board_a1e8f7a13a9a2e3d6c56601a460de5f6c} 
+\mbox{\hyperlink{class_board}{Board}} \& Board\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{o}{}\end{DoxyParamCaption})}
+
+
+
+Operator de asignare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_board}{Board} de asignat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la this. 
+\end{DoxyReturn}
+\Hypertarget{class_board_a59eacd8f2d959960100ae5234c785c57}\index{Board@{Board}!operator==@{operator==}}
+\index{operator==@{operator==}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_board_a59eacd8f2d959960100ae5234c785c57} 
+bool Board\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{o}{}\end{DoxyParamCaption}) const}
+
+
+
+Operator de egalitate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Alt \doxylink{class_board}{Board} de comparat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă matricile sunt identice. 
+\end{DoxyReturn}
+\Hypertarget{class_board_a34d7c2e655a7766ea6a850d9ddafb20a}\index{Board@{Board}!PlaceSymbol@{PlaceSymbol}}
+\index{PlaceSymbol@{PlaceSymbol}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{PlaceSymbol()}{PlaceSymbol()}}
+{\footnotesize\ttfamily \label{class_board_a34d7c2e655a7766ea6a850d9ddafb20a} 
+bool Board\+::\+Place\+Symbol (\begin{DoxyParamCaption}\item[{int}]{r}{, }\item[{int}]{c}{, }\item[{\mbox{\hyperlink{symbol_8hpp_a7feef761cd73fac6e25b8bb80d2c4e54}{Symbol}}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Plasează un simbol dacă celula e goală. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Rând (0-\/2). \\
+\hline
+{\em c} & Coloană (0-\/2). \\
+\hline
+{\em s} & Simbol de plasat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true dacă plasarea a reușit. 
+\end{DoxyReturn}
+
+
+\label{doc-related-members}
+\Hypertarget{class_board_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_board_a3cc392644ff7b99ca745f0c108a141ee}\index{Board@{Board}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_board_a3cc392644ff7b99ca745f0c108a141ee} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator de ieșire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Fluxul de ieșire. \\
+\hline
+{\em b} & \doxylink{class_board}{Board} de afișat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la fluxul de ieșire. 
+\end{DoxyReturn}
+\Hypertarget{class_board_a0ed686c7176aecfa3d5eb82ba36b9d95}\index{Board@{Board}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_board_a0ed686c7176aecfa3d5eb82ba36b9d95} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in}{, }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator de intrare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Fluxul de intrare. \\
+\hline
+{\em b} & \doxylink{class_board}{Board} de citit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referință la fluxul de intrare. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/\mbox{\hyperlink{board_8hpp}{board.\+hpp}}\end{DoxyCompactItemize}
